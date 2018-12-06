@@ -6,7 +6,7 @@ class Aminal < Formula
   depends_on "go" => :build
 
   def install
-    system "make build"
+    system "./build.sh v0.7.12"
     bin.install "./aminal" => "aminal"
   end
 
