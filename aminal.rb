@@ -1,12 +1,12 @@
 class Aminal < Formula
   homepage "https://github.com/liamg/aminal"
-  url "https://github.com/liamg/aminal/archive/v0.7.13.tar.gz"
-  sha256 "f79f64f313e9e73d9a64a02dc764952f51aa4a4f8e6cb991c13f9b4cc753ea77"
+  url "https://github.com/liamg/aminal/archive/v0.8.3.tar.gz"
+  sha256 "b55ec0df1c2fe0685a16c8e37c45dcceae933dfe9323eafffa64a7572496d8d4"
 
   depends_on "go" => :build
 
   def install
-    system "./build.sh v0.7.13"
+    system "./build.sh v0.8.3"
     bin.install "./aminal" => "aminal"
   end
 
